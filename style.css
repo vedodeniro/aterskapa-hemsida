@@ -149,3 +149,130 @@ nav {
   margin-top: 16px;
   margin-bottom: -10.5px;
 }
+
+.subscriptions {
+  padding: 80px 16px 40px;
+  text-align: center;
+}
+
+.subscriptions-h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.subscriptions-subtext {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.subscriptions-tabs {
+  display: flex;
+  max-width: 576px;
+  margin: 0 auto 40px;
+}
+
+.subscriptions-tab {
+  flex: 1;
+  padding: 3.5px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid #212121;
+}
+
+.subscriptions-tab-active {
+  border-bottom-color: #ffffff;
+}
+
+.subscriptions-cards {
+  display: flex;
+  gap: 20px;
+  max-width: 1645px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.subscriptions-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  border-radius: 8px;
+  padding: 44px 31px 24px;
+  min-height: 500px;
+}
+
+.subscriptions-card-tier {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subscriptions-price {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subscriptions-month {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subscriptions-list {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.subscriptions-list li {
+  position: relative;
+  padding: 12px 0 12px 26px;
+  font-size: 14px;
+  line-height: 21px;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.subscriptions-list li:last-child {
+  border-bottom: none;
+}
+
+.subscriptions-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+}
+
+.subscriptions-button {
+  margin-top: auto;
+  padding: 15px 0;
+  background-color: #dddddd;
+  color: #000000;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  max-width: 453px;
+}
+
+.subscriptions-yearly-offer {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #5d5d5d;
+  font-size: 13px;
+  font-weight: 500;
+  color: #bad6ec;
+  text-decoration: none;
+  max-width: 453px;
+}
+
+.subscriptions-longtext {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  font-size: 11.1px;
+  color: #cccccc;
+}
