@@ -245,9 +245,15 @@ nav {
 }
 
 .subscriptions-list li::before {
-  content: "✓";
+  content: "";
   position: absolute;
   left: 0;
+  top: 14px;
+  width: 16px;
+  height: 16px;
+  background-image: url("images/subscription-checkmark.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .subscriptions-button {
