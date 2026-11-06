@@ -13,6 +13,7 @@ html {
 body {
   background-color: #000000;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -157,7 +158,7 @@ nav {
 
 /*SUBSCRIPTION*/
 .subscriptions {
-  padding: 80px 16px 40px;
+  padding: 80px 8% 40px;
   text-align: center;
 }
 
@@ -531,7 +532,7 @@ nav {
   position: relative;
   z-index: 2;
 }
-/*SPORts/*
+/*SPORTs*/
 
 /*FAQ*/
 .faq {
@@ -620,7 +621,7 @@ nav {
   width: 24px;
   height: 24px;
 }
-/*FAQ/*
+/*FAQ*/
 
 /*FOOTER*/
 footer {
@@ -697,3 +698,243 @@ footer {
   font-size: 11px;
   color: #ffffff;
 }
+
+/*MEDIA*/
+@media (max-width: 768px) {
+  header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sign-in,
+  .sign-up {
+    min-width: 0;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 520px;
+    padding: 40px 16px 40px;
+    background-size:
+      100% 520px,
+      100% 520px,
+      200% auto;
+    background-position:
+      center top,
+      center top,
+      center 56px;
+  }
+
+  .hero-h1 {
+    font-size: 18px;
+  }
+
+  .hero-month {
+    font-size: 13px;
+  }
+
+  .hero-sporttext {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    padding: 12px 26px;
+    font-size: 16px;
+  }
+
+  .subscriptions {
+    padding: 60px 16px 40px;
+  }
+
+  .subscriptions-h2 {
+    font-size: 26px;
+  }
+
+  .subscriptions-subtext {
+    font-size: 15px;
+  }
+
+  .subscriptions-cards {
+    flex-direction: column;
+  }
+
+  .subscriptions-card {
+    min-height: auto;
+    padding: 32px 24px 24px;
+  }
+
+  .subscriptions-button {
+    margin-top: 24px;
+  }
+
+  .entertainment-h2 {
+    font-size: 22px;
+  }
+
+  .discover-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    gap: 12px;
+    max-width: 300px;
+  }
+
+  .discover-tab {
+    display: none;
+  }
+
+  .discover-h2 {
+    font-size: 16px;
+  }
+
+  .discover-tab-active {
+    display: block;
+    font-size: 24px;
+  }
+
+  .discover-tabs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sports {
+    padding: 280px 16px 40px;
+  }
+
+  .sports-image {
+    top: 0;
+    left: 50%;
+    right: auto;
+    width: 130%;
+    transform: translateX(-50%);
+  }
+
+  .sports-text {
+    max-width: none;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .sports-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .sports-card-image {
+    height: 110px;
+  }
+
+  .faq {
+    padding: 60px 16px 0;
+  }
+
+  .faq-logo {
+    width: 160px;
+    margin-bottom: 40px;
+  }
+
+  .faq-item {
+    padding-left: 52px;
+  }
+
+  .faq-item-number {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+
+  .faq-item-title {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  .faq-item-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .faq-h2 {
+    font-size: 24px;
+    margin: 60px 0 20px;
+  }
+
+  .faq-question-text {
+    font-size: 16px;
+  }
+
+  .footer-language {
+    min-width: 190px;
+    height: 46px;
+  }
+
+  .footer-language-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .subscriptions-cards {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .discover-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    max-width: 700px;
+  }
+
+  .discover-h2 {
+    font-size: 22px;
+  }
+
+  .discover-tabs {
+    display: grid;
+    justify-content: normal;
+    column-gap: 40px;
+    padding: 0 40px;
+  }
+
+  .discover-tab {
+    display: block;
+    font-size: 30px;
+  }
+
+  .discover-tab-active {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .discover-tab,
+  .discover-tab-active {
+    font-size: 32px;
+  }
+
+  .discover-tabs {
+    column-gap: 60px;
+    padding: 0 40px;
+  }
+
+  .subscriptions-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subscriptions-card {
+    flex: 0 0 calc(50% - 10px);
+    min-height: auto;
+  }
+
+  .sports {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .sports-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*MEDIA*/
